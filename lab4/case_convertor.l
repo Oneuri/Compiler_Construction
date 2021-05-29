@@ -10,10 +10,10 @@
 %%
 
 int yywrap(){
-    return 1;/*yywrap: when we have to take any input*/
+    return 1;/*yywrap: when we have to take any input or for closing the file*/
 }
 
 int main(){
-    yylex();/*reco input string and return to the parser*/
+    yylex();/*reco input string and command for lexer /scanner to start working*/
     return 0;
 }
